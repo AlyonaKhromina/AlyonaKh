@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-   double A1, A2, B1, B2, C1, C2, b, b1, b2, x, y;
+   int A1, A2, B1, B2, C1, C2, b, b1, b2, x, y;
     cout<<"Введите A1 = ";
 cin>>A1;
     cout<<"Введите A2 = ";
