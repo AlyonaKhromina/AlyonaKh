@@ -7,16 +7,11 @@ double Fact2(int x)
     if (x % 2 == 0)
     {
         p = 1;
-        for (i = 1, j = 0; i < x; i++)
+        for (i = 0, j = 2; i != x; i+=2)
         {
-            j += 2;
+           
             p = p * (double)j;
-            if (p == x)
-            {
-                p = p * (double)j;
-                return p;
-                break;
-            }
+             j += 2;
         }
     }
     if (x % 2 != 0)
@@ -32,7 +27,7 @@ double Fact2(int x)
 }
 int main () {
     double n;
-    cout << "Введите число возводимое в Fact2: ";
+    cout << "Введите число возводимое в Fact2:";
     cin >> n;
-    cout <<"Fact2 ="<< Fact2(n) << endl;
+    cout << Fact2(n) << endl;
 }
